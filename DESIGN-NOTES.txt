@@ -62,7 +62,9 @@ assembled unit's voltage drop and temperature rise at the intended total load.
 
 VERIFICATION
 KiCad 9.0.6 DRC: zero violations, zero unconnected pads, zero schematic parity
-issues. Schematic ERC report is included. Bare-board previews are retained.
+issues. Schematic ERC: zero errors and warnings. Connector positions, copper
+keepouts, drill coordinates, IPC polarity, Gerber dimensions and manufacturing
+archive integrity were checked. Bare-board previews are retained.
 The assembled 3D view includes one XT30UPB-F and four XT30UPB-M models from
 realthunder, stored in models/ with project-relative paths. Models use a
 2.5 mm X offset to align their centred origin with the footprint pin-1 origin.
@@ -79,4 +81,11 @@ Installed KiCad 9 Connector_AMASS XT30UPB-M/F footprints include pad sizes,
 
 REBUILD
 Run build_board.py with the Python bundled in KiCad 9 (pcbnew and wx required).
-Re-export Gerbers/drills and regenerate previews after any board changes.
+On Windows, from the project directory in PowerShell:
+
+& 'C:\Program Files\KiCad\9.0\bin\python.exe' build_board.py
+
+The generator rewrites the PCB, schematic and project using KiCad's installed
+standard footprint and symbol libraries. After changing the layout, rerun
+DRC/ERC and regenerate production exports and previews before ordering.
+In KiCad 3D Viewer, enable through-hole models if they are hidden.

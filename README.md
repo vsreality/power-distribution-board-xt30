@@ -28,18 +28,6 @@ Open `xt30-distribution.kicad_pro` in KiCad 9. The PCB, schematic and project-re
 - `drc-report.txt`, `erc-report.txt`, `production-verification.txt`: validation results.
 - `models/MODEL-SOURCES.txt`: third-party model provenance; no additional license is asserted for those models.
 
-## Validation
+**Design notes:** DRC/ERC checks pass. Current rating and thermal performance have not been validated. No onboard fusing or reverse-polarity protection.
 
-KiCad 9.0.6 DRC/ERC reported zero violations, with no unconnected pads or schematic parity issues. Connector positions, copper keepouts, drill coordinates, IPC polarity, Gerber dimensions and manufacturing archive integrity were checked.
-
-Physical mating-cable access and loaded thermal performance remain unverified. No current or voltage rating has been established. The board has no fuse, reverse-polarity protection or voltage regulation.
-
-## Rebuild
-
-On Windows with KiCad 9 installed:
-
-```powershell
-& 'C:\Program Files\KiCad\9.0\bin\python.exe' build_board.py
-```
-
-The generator rewrites the PCB, schematic and project. After changing the layout, rerun DRC/ERC and regenerate production exports and previews before ordering. The generator uses KiCad's installed standard footprint and symbol libraries. In the 3D viewer, enable through-hole models if they are hidden.
+See [DESIGN-NOTES.txt](DESIGN-NOTES.txt) for detailed validation and rebuild instructions.
