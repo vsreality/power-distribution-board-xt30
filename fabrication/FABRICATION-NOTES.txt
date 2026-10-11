@@ -1,0 +1,82 @@
+VSReality Robotics - PD-XT30-5 v1.0
+
+Editable KiCad 9 project, PCB and matching schematic.
+Layout follows the supplied sketch: input at the top, four outputs below,
+all in one column, with an M3 mounting hole at each end.
+
+MECHANICAL
+Board: 18 x 52 mm; 4 mm corner radii approximated by short outline segments.
+Connector bodies are centred on the board width; equal 7 mm row pitch.
+Front silkscreen: ports 1-5 and polarity. Back also carries VSReality Robotics,
+PD-XT30-5 and v1.0.
+Thickness: 1.6 mm including solder mask. FR4, two copper layers.
+Mounting: 2 x 3.2 mm finished NON-PLATED holes for M3 screws.
+Hole centres: (9,5) and (9,47) mm from the board's top-left envelope.
+Mounting pitch: 42 mm. Copper keepout diameter: 7 mm on both sides.
+Use screw heads/washers no larger than 6 mm OD to retain a 0.5 mm margin.
+Connector body centres: x=9 mm, y=12,19,26,33,40 mm from top-left.
+Connector pitch down the board: 7 mm. Pin pitch: 5 mm.
+Male-body nominal gap between rows is 1.8 mm; footprint courtyard gap is
+0.8 mm. Physical access with the actual mating cables remains to be checked.
+Connector holes: 10 x 1.8 mm finished plated holes; standard 3 mm pads.
+
+COPPER / FABRICATION
+Specify 70 um (2 oz) finished copper on BOTH layers when ordering.
+Both layers: V+ LEFT strip as viewed from the FRONT; GND fills all remaining
+available area, including the right side and both end areas.
+V+ zone: x=0..8.75 mm, y=10..42 mm; 0.5 mm clearance to surrounding GND.
+V+ is excluded from the full 10 mm mounting region at EACH end. The existing
+7 mm diameter screw/washer keepouts remain copper-free on both layers.
+A rear view mirrors left and right. Same-net plated connector pads join
+the corresponding copper between layers.
+Planes fill their assigned areas except necessary clearance around opposite-net
+pads, board edges and mounting hardware. No thermal spokes or narrow traces.
+Minimum copper clearance: 0.5 mm. Copper-to-edge clearance: 0.5 mm.
+Solder mask both sides; white silkscreen both sides; lead-free HASL finish.
+Solid plane connections require sufficient soldering heat/preheat.
+Gerber and separate PTH/NPTH drill files are in fabrication/.
+Gerbers alone do not specify copper thickness: explicitly select 2 oz per side.
+
+CONNECTORS / BOM (PROVISIONAL GENDER)
+J1: quantity 1, AMASS XT30UPB-F, vertical PCB connector, port 1.
+J2-J5: quantity 4, AMASS XT30UPB-M, vertical PCB connectors, ports 2-5.
+H1-H2: M3 mounting hardware, length selected for the enclosure/standoffs.
+Standard KiCad Connector_AMASS footprints are embedded in the PCB.
+This design is for PCB-tail XT30UPB parts, not solder-cup XT30 cable parts.
+Top view: positive on LEFT, negative on RIGHT, matching the reference sketch.
+Pin 1 = GND; pin 2 = V+. All five connectors are wired in parallel.
+Check actual connector housing polarity before soldering.
+Input female / outputs male was an unconfirmed working assumption. Select
+the mating gender appropriate to the existing harness before assembly;
+recessed female contacts are normally preferred on energized supply cables.
+
+ELECTRICAL LIMITS STILL TO CONFIRM
+Operating voltage and total continuous current were not provided.
+No validated current or voltage rating is claimed for this board.
+The input carries the SUM of all four output currents. Connector, solder joint,
+wire, ambient-temperature and cooling limits apply even with broad planes.
+The board contains no fuse, reverse-polarity protection or voltage regulation.
+Provide source and branch protection appropriate to the connected wiring.
+Check continuity, isolation and polarity before applying power. Validate the
+assembled unit's voltage drop and temperature rise at the intended total load.
+
+VERIFICATION
+KiCad 9.0.6 DRC: zero violations, zero unconnected pads, zero schematic parity
+issues. Schematic ERC report is included. Bare-board previews are retained.
+The assembled 3D view includes one XT30UPB-F and four XT30UPB-M models from
+realthunder, stored in models/ with project-relative paths. Models use a
+2.5 mm X offset to align their centred origin with the footprint pin-1 origin.
+In KiCad 3D Viewer, enable through-hole models if they are hidden.
+See models/MODEL-SOURCES.txt for provenance. Physical fit and load testing
+have not been performed. The PCB and manufacturing output remain review drafts
+until the connector choice and intended voltage/current are established.
+
+SOURCES
+AMASS XT30UPB manufacturer information:
+https://www.china-amass.net/xt30upb-m-product/
+Installed KiCad 9 Connector_AMASS XT30UPB-M/F footprints include pad sizes,
+1.8 mm drills, 5 mm pin pitch, polarity markings and body/courtyard outlines.
+
+REBUILD
+Run build_board.py with the Python bundled in KiCad 9 (pcbnew and wx required).
+Re-export Gerbers/drills and regenerate previews after any board changes.

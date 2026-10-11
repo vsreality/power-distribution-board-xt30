@@ -1,0 +1,49 @@
+VSReality Robotics - PD-XT30-5 v1.0
+BARE PCB FABRICATION PACKAGE
+
+Board size: 18.0 x 52.0 mm, outline defined by Edge_Cuts.gm1 centreline.
+Material: FR4.
+Finished board thickness: 1.6 mm.
+Copper layers: 2.
+Finished copper thickness: 70 um (2 oz) on EACH side.
+Solder mask: green, both sides.
+Silkscreen: white, both sides.
+Surface finish: lead-free HASL.
+Electrical test: continuity/isolation against included IPC-D-356 netlist.
+No assembly, components, stencil or panelization specified.
+
+DRILLING
+PTH: 10 holes, 1.8 mm finished diameter (connector pins).
+NPTH: 2 holes, 3.2 mm finished diameter (M3 clearance).
+M3 mounting-hole centre spacing: 42 mm.
+Drill coordinates: metric, absolute, same origin as Gerbers.
+Do not plate NPTH holes. Drill diameters are finished dimensions.
+
+LAYERS
+*-F_Cu.gtl          Front copper / V+ left strip, remaining area GND
+*-B_Cu.gbl          Back copper / V+ left strip, remaining area GND (front view)
+*-F_Mask.gts        Front solder mask
+*-B_Mask.gbs        Back solder mask
+*-F_Silkscreen.gto  Front legend
+*-B_Silkscreen.gbo  Back legend
+*-Edge_Cuts.gm1     Board outline
+*-PTH.drl           Plated drill file
+*-NPTH.drl          Non-plated drill file
+*.ipc              IPC-D-356 electrical-test netlist
+*-job.gbrjob        Gerber job and stackup metadata
+
+ORDER SETTINGS
+Select 2 oz copper on both sides explicitly in the manufacturer's order form;
+Gerber copper artwork by itself does not specify copper thickness.
+Do not mirror or scale any files. All layers use a common absolute origin.
+All connector pads have solid plane connections without thermal relief.
+V+ has 0.5 mm clearance to surrounding GND on both layers.
+Only the V+ strip stops 10 mm from each end. GND fills remaining available area.
+Keep 7 mm diameter copper-free screw/washer regions around both M3 holes.
+
+DESIGN VALIDATION
+KiCad DRC: 0 violations, 0 unconnected pads, 0 schematic parity issues.
+Manufacturing data exported from the supplied PD-XT30-5 v1.0 board.
+Operating voltage/current ratings and assembled thermal performance remain
+unvalidated. This package defines bare-board manufacture, not a tested power
+rating. The design is unfused; protection is external to this PCB.

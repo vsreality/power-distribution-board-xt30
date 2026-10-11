@@ -1,0 +1,9 @@
+*.kicad_prl
+*.lck
+*.bak
+*~
+*-backups/
+__pycache__/
+render-config/
+.DS_Store
+Thumbs.db

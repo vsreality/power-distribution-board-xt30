@@ -1,0 +1,9 @@
+XT30UPB-M and XT30UPB-F STEP and VRML models by realthunder.
+Source: https://github.com/realthunder/Connectors_Amass.3dshapes
+Placement reference: https://github.com/realthunder/Connectors_Amass.pretty
+Models retrieved 2026-10-10. Original files retained.
+Model-specific license not declared by source repository.
+The mjbots repository license file applies only to its separately downloaded source.
+Footprint-relative placement: offset X=2.5 mm, Y=0, Z=0, scale=1, rotation=0.
+Board footprints retain their 180 degree orientation. PCB manufacturing geometry unchanged.
+Models are visual references; not a substitute for the current manufacturer mechanical drawing.

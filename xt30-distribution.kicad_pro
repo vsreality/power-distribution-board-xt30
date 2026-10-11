@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "filename": "xt30-distribution.kicad_pro",
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.5,
+        "min_copper_edge_clearance": 0.5,
+        "min_hole_clearance": 0.25,
+        "min_silk_clearance": 0.15,
+        "min_track_width": 0.25
+      },
+      "defaults": {
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.25
+      }
+    }
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.5,
+        "track_width": 2.0,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.25,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25
+      }
+    ]
+  }
+}

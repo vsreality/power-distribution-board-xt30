@@ -1,0 +1,214 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid 64374430-2f43-59af-8a56-226159e46373) (paper "A4")
+(title_block (title "VSReality Robotics - PD-XT30-5") (rev "1.0"))
+(lib_symbols (symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+(text "VSReality Robotics - PD-XT30-5 v1.0" (at 30 30 0) (effects (font (size 2.5 2.5)) (justify left)) (uuid 5f18a790-f5b5-5de7-97bd-62d9897ec89f))
+(text "Passive parallel bus: each output receives the input voltage." (at 30 40 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e5c476b1-5634-5738-bb47-6e34ed894297))
+(text "Pin 1 = GND (-). Pin 2 = V+ (+). No fuses, regulation or reverse-polarity protection." (at 30 47 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid b0880a59-6b52-58a6-aea4-03b98086fe33))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 50.8 81.28 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 1d0508cd-6526-586d-a766-5e3e8cee24d0)
+      (property "Reference" "J1" (at 53.8 76.28 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "XT30UPB-F" (at 54.8 88.28 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" (at 50.8 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (pin "1" (uuid b64e850c-2aed-5783-9e61-4c52b0d4da6e)) (pin "2" (uuid d50cd5ff-42a5-5e73-9676-bb85d7685ef9))
+      (instances (project "xt30-distribution" (path "/64374430-2f43-59af-8a56-226159e46373" (reference "J1") (unit 1)))))
+(text "1" (at 43.8 69.28 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e09eea43-55b7-5569-8c81-2e33ffb29954))
+(wire (pts (xy 45.72 81.28) (xy 38.099999999999994 81.28)) (stroke (width 0) (type default)) (uuid c6208c09-a851-5af8-a66f-6991f2ecfda4))
+(label "GND" (at 38.099999999999994 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 80cb12dc-74d7-57c2-9cfd-60f184c8a831))
+(wire (pts (xy 45.72 83.82000000000001) (xy 38.099999999999994 83.82000000000001)) (stroke (width 0) (type default)) (uuid 20be364d-4935-5ef9-a0a5-116964ad8efb))
+(label "V+" (at 38.099999999999994 83.82000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid a2e41104-dbcb-53b7-9734-a4907d8fc053))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 95.25 81.28 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 59aee62f-9266-540c-8f14-a494371468ba)
+      (property "Reference" "J2" (at 98.25 76.28 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "XT30UPB-M" (at 99.25 88.28 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical" (at 95.25 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (pin "1" (uuid e642d802-9a6b-5c66-b9bc-f65ac4d51dcb)) (pin "2" (uuid 30b5b950-7d31-58cb-9bac-7d9aa03650ba))
+      (instances (project "xt30-distribution" (path "/64374430-2f43-59af-8a56-226159e46373" (reference "J2") (unit 1)))))
+(text "2" (at 88.25 69.28 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 248e1bb3-666b-550e-8bf0-0af807d4e202))
+(wire (pts (xy 90.17 81.28) (xy 82.55 81.28)) (stroke (width 0) (type default)) (uuid 94c64131-f421-599e-938c-e21ba74674aa))
+(label "GND" (at 82.55 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 8274ea77-f7e3-5474-a265-848af9276bb9))
+(wire (pts (xy 90.17 83.82000000000001) (xy 82.55 83.82000000000001)) (stroke (width 0) (type default)) (uuid e802abcd-0b62-55a8-9092-82f1edb0da2f))
+(label "V+" (at 82.55 83.82000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 39671117-52c7-50f8-a194-83bfb1a8c6a8))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 139.7 81.28 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 2a174c92-8bcd-5baf-8999-258ce8f83bfc)
+      (property "Reference" "J3" (at 142.7 76.28 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "XT30UPB-M" (at 143.7 88.28 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical" (at 139.7 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (pin "1" (uuid f883657a-4d86-5811-9d2d-d511609eae77)) (pin "2" (uuid f39730de-8211-501b-b7ff-ad35c0c74d69))
+      (instances (project "xt30-distribution" (path "/64374430-2f43-59af-8a56-226159e46373" (reference "J3") (unit 1)))))
+(text "3" (at 132.7 69.28 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 74f33232-6447-5341-87a8-d280f82f3d7f))
+(wire (pts (xy 134.61999999999998 81.28) (xy 126.99999999999999 81.28)) (stroke (width 0) (type default)) (uuid 56291ae1-9cc8-52fa-823a-10b4be827cc8))
+(label "GND" (at 126.99999999999999 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 222d1f03-747a-5d2b-bce5-19fa26efe6db))
+(wire (pts (xy 134.61999999999998 83.82000000000001) (xy 126.99999999999999 83.82000000000001)) (stroke (width 0) (type default)) (uuid f343ff4c-25a3-5063-b282-5f302302cc2c))
+(label "V+" (at 126.99999999999999 83.82000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 2c84c049-9a92-5122-b82f-06c610ed1153))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 184.15000000000003 81.28 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 6bab6c67-b1fd-5950-b9e2-9b44c3cec7c1)
+      (property "Reference" "J4" (at 187.15000000000003 76.28 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "XT30UPB-M" (at 188.15000000000003 88.28 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical" (at 184.15000000000003 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (pin "1" (uuid aae36f05-018e-5d18-bb7d-f42a04e65bdb)) (pin "2" (uuid 0d888835-e4ac-57c1-9d71-47ed8071dccd))
+      (instances (project "xt30-distribution" (path "/64374430-2f43-59af-8a56-226159e46373" (reference "J4") (unit 1)))))
+(text "4" (at 177.15000000000003 69.28 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 834ea51d-86ce-5133-acec-8bed03bedd5e))
+(wire (pts (xy 179.07000000000002 81.28) (xy 171.45000000000005 81.28)) (stroke (width 0) (type default)) (uuid c5e4899d-bbad-5cfb-b2b8-3234167d9f85))
+(label "GND" (at 171.45000000000005 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 070cf2ff-2dd0-5f8b-9ea9-6058d7c86cc9))
+(wire (pts (xy 179.07000000000002 83.82000000000001) (xy 171.45000000000005 83.82000000000001)) (stroke (width 0) (type default)) (uuid 5fa5e049-d3b3-507a-82dd-f76df9358b55))
+(label "V+" (at 171.45000000000005 83.82000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 87ae913b-a0e8-5ddd-a9e7-1ea6bcfdd6e9))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 228.60000000000002 81.28 0) (unit 1)
+      (in_bom yes) (on_board yes) (dnp no) (uuid 87854b5f-6156-5185-b079-d286e597e600)
+      (property "Reference" "J5" (at 231.60000000000002 76.28 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "XT30UPB-M" (at 232.60000000000002 88.28 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical" (at 228.60000000000002 81.28 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (pin "1" (uuid 4fb036b7-4b8a-5664-9bd7-9c679b4076fc)) (pin "2" (uuid 9c925547-9e7d-53cf-b8db-8a21ae076572))
+      (instances (project "xt30-distribution" (path "/64374430-2f43-59af-8a56-226159e46373" (reference "J5") (unit 1)))))
+(text "5" (at 221.60000000000002 69.28 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 1501c7fb-6c7a-53f0-a0f8-2ae92f7785d2))
+(wire (pts (xy 223.52 81.28) (xy 215.90000000000003 81.28)) (stroke (width 0) (type default)) (uuid bb65fe4d-156f-5f6b-bda6-ca13c83d11ca))
+(label "GND" (at 215.90000000000003 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid ba6d9136-5d23-5b06-ba43-53d27070756c))
+(wire (pts (xy 223.52 83.82000000000001) (xy 215.90000000000003 83.82000000000001)) (stroke (width 0) (type default)) (uuid 0cfa26cc-38b3-5a0b-be3e-09d550d65e70))
+(label "V+" (at 215.90000000000003 83.82000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 8a692c3f-a2fd-5adb-83da-58267fbe35fd))
+(text "PCB: 18 x 52 mm, 1.6 mm FR4, 2 layers, 70 um (2 oz) copper per layer." (at 30 110 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid c7f5fb25-5a11-5529-9169-528b0e6a481f))
+(text "Two 3.2 mm NPTH mounting holes for M3 screws; mounting centres 42 mm." (at 30 117 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e33c626a-7bd3-5c1f-b1d7-153e8165c34d))
+(text "7 mm diameter copper keepouts at mounting holes. Solid pad-to-plane connections." (at 30 124 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 3e8374c3-222a-5934-9826-7d19bd8a62fc))
+(text "Both layers: V+ left strip, GND fills remaining area. M3 screw keepouts remain copper-free." (at 30 131 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 48748a5f-3dc5-5b8d-89a8-409190d908f8))
+(text "PROVISIONAL: connector gender, operating voltage and total continuous current require confirmation." (at 30 143 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid e80c07a2-d109-593f-a742-98aebe7e04e8))
+(text "The input connector carries the SUM of all output currents. Thermal load test required." (at 30 150 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 9c7d75b7-482e-51bf-aed8-9c56b11c915d))
+(embedded_fonts no))
